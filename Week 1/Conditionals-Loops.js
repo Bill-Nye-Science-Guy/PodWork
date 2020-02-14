@@ -4,16 +4,28 @@
 
 function ProblemOne(x) {
     var answer = 0;
-    for (var y = 1; y <= x; y+=1) {
-        console.log(answer += y);
+    if (x < 0) {
+        x = (x * -1);
+        for (var y = 1; y <= x; y+=1) {
+            console.log(answer += y);
+        }
+        return (answer * -1);
     }
-    return answer;
+    else {
+        for (var y = 1; y <= x; y+=1) {
+            console.log(answer += y);
+        }
+        return answer;
+    }
+
+
 }
 
 
 // console.log(ProblemOne(5)); //Should be: 15
 // console.log(ProblemOne(3)); //Should be: 6
-console.log(ProblemOne(-3)); //Should be: -6
+// console.log(ProblemOne(-3)); //Should be: -6
+console.log(ProblemOne(-5)); //Should be: -15
 
 
 
