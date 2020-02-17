@@ -15,22 +15,48 @@
     we will stop this by exiting the loop using break >>
     console log " NO! were not doing that song again if the argument passed is >= to 99 && 0< or not a number.
      */
-    function bottlesSong(bottles) {
-        if(isNaN(bottles) || bottles < 0 || bottles > 99){
-            console.log("NO! were not doing that song again!");
-        }else{
-            for (var i = 1; i < 100; i++){
-                if (i === bottles){
-                    console.log("EndOfSong");
-                    break;
-                }else{
-                    console.log( i + " BOTTLES OF BEER ON THE WALL!")}
-            }
-        }
-    }
+    // function bottlesSong(bottles) {
+    //     if(isNaN(bottles) || bottles < 0 || bottles > 99){
+    //         console.log("NO! were not doing that song again!");
+    //     }else{
+    //         for (var i = 1; i < 100; i++){
+    //             if (i === bottles){
+    //                 console.log("EndOfSong");
+    //                 break;
+    //             }else{
+    //                 console.log( i + " BOTTLES OF BEER ON THE WALL!")}
+    //         }
+    //     }
+    // }
 
-    console.log(bottlesSong(70));
+    // console.log(bottlesSong(70));
+
+
+
+
+
+
+
+
+
     // Write a loop that will console.log hexadecimal numbers until it reaches '100' (uninclusive). Take a look at this stackoverflow post for information on converting decimal numbers to hexadecimal.  https://stackoverflow.com/questions/57803/how-to-convert-decimal-to-hexadecimal-in-javascript
+function hexNumber(number) {
+var hexNumero = number.toString(16).toUpperCase();
+    console.log(hexNumero);
+}
+
+function hexList() {
+    var arrayOfNum = [100, 200, 300, 400, 500, 600, 700, 800, 900, 100, 110, 120, 130, 140, 150, 160];
+    for (var i = 0; i < arrayOfNum.length; i++)
+    {
+        hexNumber(arrayOfNum[i]);
+    }
+}
+
+hexList();
+
+
+
     // Write a loop that prompts the user to confirm if they have drank water today. This loop should run until the user has confirmed the prompt (clicked yes) 6 times.
 
 
