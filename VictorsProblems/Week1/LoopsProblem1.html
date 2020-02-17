@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoopsProblem1 </title>
+</head>
+<body>
+<script>
+    // A couple challenges I have for those finished with the loops exercise but wanting more practice:
+    // Write a function that uses a loop to console.log "99 bottles of beer on the wall" until the passed argument number. Use a break to exit the loop, and console.log the message "Aw no, we're not doing that song again," in the event the argument is a number greater than or equal to 99, less than 0, or is not a number.
+
+    /*
+    loop that console logs " 99 bottles of beer on the wall"
+    the argument for this function will dictate when to stop console logging
+    we will stop this by exiting the loop using break >>
+    console log " NO! were not doing that song again if the argument passed is >= to 99 && 0< or not a number.
+     */
+    function bottlesSong(bottles) {
+        if(isNaN(bottles) || bottles < 0 || bottles > 99){
+            console.log("NO! were not doing that song again!");
+        }else{
+            for (var i = 1; i < 100; i++){
+                if (i === bottles){
+                    console.log("EndOfSong");
+                    break;
+                }else{
+                    console.log( i + " BOTTLES OF BEER ON THE WALL!")}
+            }
+        }
+    }
+
+    console.log(bottlesSong(70));
+    // Write a loop that will console.log hexadecimal numbers until it reaches '100' (uninclusive). Take a look at this stackoverflow post for information on converting decimal numbers to hexadecimal.  https://stackoverflow.com/questions/57803/how-to-convert-decimal-to-hexadecimal-in-javascript
+    // Write a loop that prompts the user to confirm if they have drank water today. This loop should run until the user has confirmed the prompt (clicked yes) 6 times.
+
+
+
+
+
+
+
+    // Welcome. In this kata, you are asked to square every digit of a number.
+    //
+    //     For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+    //
+    // Note: The function accepts an integer and returns an integer
+    // dont want it to be a string
+    // should return integer
+
+    function squaredDigit(number) {
+    return Number(number)
+    return parseFloat(number)
+    }
+</script>
+</body>
+</html>
