@@ -4,21 +4,23 @@
 
 function ProblemOne(x) {
     var answer = 0;
+    var returnThis;
     // For positives...
     if (x < 0) {
         x = (x * -1);
         for (var y = 1; y <= x; y+=1) {
             answer += y;
         }
-        return (answer * -1);
+        returnThis = (answer * -1);
     }
     // And for negatives...
     else {
         for (var y = 1; y <= x; y+=1) {
             answer += y;
         }
-        return answer;
+        returnThis = answer;
     }
+    return returnThis;
 }
 
 // console.log(ProblemOne(5)); //Should be: 15
