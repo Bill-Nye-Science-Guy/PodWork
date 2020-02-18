@@ -40,28 +40,33 @@
 
 
     // Write a loop that will console.log hexadecimal numbers until it reaches '100' (uninclusive). Take a look at this stackoverflow post for information on converting decimal numbers to hexadecimal.  https://stackoverflow.com/questions/57803/how-to-convert-decimal-to-hexadecimal-in-javascript
-function hexNumber(number) {
-var hexNumero = number.toString(16).toUpperCase();
-    console.log(hexNumero);
-}
-
-function hexList() {
-    for (var i = 0; i < 101; i++)
-    {
-        hexNumber(i.toString(16));
-    }
-}
-
-hexList();
+// function hexNumber(number) {
+// var hexNumero = number.toString(16).toUpperCase();
+//     console.log(hexNumero);
+// }
+//
+// function hexList() {
+//     for (var i = 0; i < 101; i++)
+//     {
+//         hexNumber(i.toString(16));
+//     }
+// }
+//
+// hexList();
 
 
 
     // Write a loop that prompts the user to confirm if they have drank water today. This loop should run until the user has confirmed the prompt (clicked yes) 6 times.
 
+ function waterQ(){
+     for (var i = 0; i < 6; i++){
+         if (confirm("Have you drank water today?")){
 
+         }else {alert("DRINK MORE WATER")}
+     }
+ }
 
-
-
+    console.log(waterQ());
 
 
     // Welcome. In this kata, you are asked to square every digit of a number.
@@ -72,10 +77,10 @@ hexList();
     // dont want it to be a string
     // should return integer
 
-    function squaredDigit(number) {
-    return Number(number)
-    return parseFloat(number)
-    }
+    // function squaredDigit(number) {
+    // return Number(number)
+    // return parseFloat(number)
+    // }
 </script>
 </body>
 </html>
