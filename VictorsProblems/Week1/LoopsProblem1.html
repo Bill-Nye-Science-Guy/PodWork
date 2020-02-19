@@ -28,10 +28,10 @@
     //         }
     //     }
     // }
-
+    //
     // console.log(bottlesSong(70));
-
-
+    //
+    //
 
 
 
@@ -56,31 +56,143 @@
 
 
 
-    // Write a loop that prompts the user to confirm if they have drank water today. This loop should run until the user has confirmed the prompt (clicked yes) 6 times.
+ //    // Write a loop that prompts the user to confirm if they have drank water today. This loop should run until the user has confirmed the prompt (clicked yes) 6 times.
+ //
+ // function waterQ(){
+ //     for (var i = 0; i < 6; i++){
+ //         if (confirm("Have you drank water today?")){
+ //
+ //         }else {alert("DRINK MORE WATER")}
+ //     }
+ // }
+ //
+ //    console.log(waterQ());
+ //
 
- function waterQ(){
-     for (var i = 0; i < 6; i++){
-         if (confirm("Have you drank water today?")){
-
-         }else {alert("DRINK MORE WATER")}
-     }
- }
-
-    console.log(waterQ());
 
 
-    // Welcome. In this kata, you are asked to square every digit of a number.
+
+
+
+
+
+
+
+
+    // -    -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+    // Problem 2 //
+
+
+    // Ageing the Population...
+//     // Given an object of people and their ages, return how old the people would be after n years have passed. Use the absolute value of n.
+//
+//     var people = [
+//         {
+//             id: "person1",
+//             age: 10
+//         },
+//         {
+//             id: "person2",
+//             age: 20,
+//         },
+//         {
+//             id: "person3",
+//             age: 30,
+//         },
+//
+//     ];
+//
+// function thisManyYears(years) {
+//     for (var i=0; i < people.length ; i++) {
+//         console.log(people[i].age + years);
+//
+//     }
+// }
+//
+//     console.log(thisManyYears(3));
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // -    -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   //Problem 3//
+
+
+
     //
-    //     For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+    // In the casino game Blackjack, a player can gain an advantage over the house by keeping track of the relative number of high and low cards remaining in the deck. This is called Card Counting.
     //
-    // Note: The function accepts an integer and returns an integer
-    // dont want it to be a string
-    // should return integer
+    //     Having more high cards remaining in the deck favors the player. Each card is assigned a value according to the table below. When the count is positive, the player should bet high. When the count is zero or negative, the player should bet low.
+    //
+    //     Count Change	Cards
+    // +1	2, 3, 4, 5, 6
+    // 0	7, 8, 9
+    // -1	10, 'J', 'Q', 'K', 'A'
+    // You will write a card counting function. It will receive a card parameter, which can be a number or a string, and increment or decrement the global count variable according to the card's value (see table). The function will then return a string with the current count and the string Bet if the count is positive, or Hold if the count is zero or negative. The current count and the player's decision (Bet or Hold) should be separated by a single space.
+    //
+    //     Example Output
+    // -3 Hold
+    // 5 Bet
+    //
+    // Hint
+    // Do NOT reset count to 0 when value is 7, 8, or 9.
+    // Do NOT return an array.
+    //     Do NOT include quotes (single or double) in the output.
+    //
+    //
+    //
+    var count = 0;
 
-    // function squaredDigit(number) {
-    // return Number(number)
-    // return parseFloat(number)
-    // }
+    function cc(card) {
+
+        // Only change code below this line
+        if (card > 0 && card < 7){
+            count++
+        }else if(card > 6 && card < 10){
+
+        }else if (card > 9 || card.toLowerCase() === "j" || card.toLowerCase() === "q" || card.toLowerCase() === "k" || card.toLowerCase() === "a"){
+            count--;
+        }
+        console.log(count);
+        if (count > 0){
+        return "BET";
+        }else {return "DONT BET"}
+        // Only change code above this line
+    }
+    console.log(cc("k"));
+    // Add/remove calls to test your function.
+    // Note: Only the last will display
+    // cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+
+
+
+
+
+
+
+
+
+
 </script>
 </body>
 </html>
