@@ -7,6 +7,7 @@ function removeStrings() {
     return wordsAndNumbers.filter(isNaN);
 }
 removeStrings();
+
 // var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
 // var planetsArray = planetsString.split("|");
 
@@ -32,25 +33,15 @@ function getVowels(x) {
     return  vowelsCount;
 }
 // Problem 3.
-//Take a list of names.
-// Add "Hello" to every name.
-// Make one big string with all greetings.
-// Should be one string with a comma in between every "Hello (Name)".
-//
-// EXAMPLES
-// greetPeople(["Joe"]) ➞ "Hello Joe"
-//
-// greetPeople(["Angela", "Joe"]) ➞ "Hello Angela, Hello Joe"
-//
-// greetPeople(["Frank", "Angela", "Joe"]) ➞ "Hello Frank, Hello Angela, Hello Joe"
+// write a function named remove3s that accepts and array of numbers and returns an array with all of the same numbers except for 3
 
-function greetPeople(names) {
-    if (names.length === 0) {
-        return "";
-    }
-    var greeting = "";
-    for (var i = 0; i < names.length; i++) {
-        greeting = greeting + "Hello " + names[i] + ", ";
-    }
-    return greeting.slice(0, -2);
+function remove3s(arr) {
+    let bucket = [];
+    arr.forEach(function (num) {
+        if (num !==3) {
+            bucket.push(num);
+        }
+    })
+    return bucket
 }
+
