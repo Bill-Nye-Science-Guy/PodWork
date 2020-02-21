@@ -36,7 +36,7 @@ function getVowels(x) {
 // write a function named remove3s that accepts and array of numbers and returns an array with all of the same numbers except for 3
 
 function remove3s(arr) {
-    let bucket = [];
+    var bucket = [];
     arr.forEach(function (num) {
         if (num !==3) {
             bucket.push(num);
@@ -44,4 +44,5 @@ function remove3s(arr) {
     })
     return bucket
 }
-
+// check
+console.log(remove3s([1, 3, 3, 3, 3, 3, 4, 5, 6, 7, 7]));
