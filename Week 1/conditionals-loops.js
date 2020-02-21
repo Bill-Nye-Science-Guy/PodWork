@@ -23,33 +23,34 @@ removeStrings();
 
 function getVowels(x) {
     var vowelsCount = 0;
-
-    //turn the input into a string
     var string = x.toString();
-
-    //loop through the string
-    for (var i = 0; i <= string.length - 1; i++) {
-
-        //if a vowel, add to vowel count
-        if (string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u") {
+    for (var i = 0; i <= string.length; i++) {
+        if(string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u") {
             vowelsCount += 1;
         }
     }
-    return vowelsCount;
+    return  vowelsCount;
 }
-
-
 // Problem 3.
-// Imagine a school that kids attend for 6 years.
-// In each year, there are five groups started,
-// marked with the letters a, b, c, d, e.
-// For the first year, the groups are 1a, 1b, 1c, 1d, 1e
-// and for the last year, the groups are 6a, 6b, 6c, 6d, 6e.
-//
-// Write a function that returns the groups in the school by year (as a string),
-// separated with a comma and a space in the form of "1a, 1b, 1c, 1d, 1e, 2a, 2b (....) 5d, 5e, 6a, 6b, 6c, 6d, 6e".
+//Take a list of names.
+// Add "Hello" to every name.
+// Make one big string with all greetings.
+// Should be one string with a comma in between every "Hello (Name)".
 //
 // EXAMPLES
-// printAllGroups() ➞ "1a, 1b, 1c, 1d, 1e, 2a, 2b, 2c, 2d, 2e, 3a, 3b, 3c, 3d, 3e, 4a, 4b, 4c, 4d, 4e, 5a, 5b, 5c, 5d, 5e, 6a, 6b, 6c, 6d, 6e "
+// greetPeople(["Joe"]) ➞ "Hello Joe"
+//
+// greetPeople(["Angela", "Joe"]) ➞ "Hello Angela, Hello Joe"
+//
+// greetPeople(["Frank", "Angela", "Joe"]) ➞ "Hello Frank, Hello Angela, Hello Joe"
 
-
+function greetPeople(names) {
+    if (names.length === 0) {
+        return "";
+    }
+    var greeting = "";
+    for (var i = 0; i < names.length; i++) {
+        greeting = greeting + "Hello " + names[i] + ", ";
+    }
+    return greeting.slice(0, -2);
+}
