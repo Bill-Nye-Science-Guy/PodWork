@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+    <title>Change the content of a cell</title>
+    <script src="../../JS/Jquery.js"></script>
+    <style type="text/css">
+        * {
+            background: black;
+            color: skyblue;
+            font-size: 20px;
+        }
+
+        body {
+            margin: 30px;
+        }
+
+        td, tr {
+            border: skyblue solid 1px;
+        }
+
+    </style>
+</head>
+<body>
+<table id="myTable">
+</table>
+<form>
+    <input  id="newTableButton" type="button"  value="Create the table">
+</form>
+</body>
+</html>
+<script>
+    $("#newTableButton").click(function () {
+          var rows = prompt("Enter number of rows desired");
+          var columns = prompt("Enter number of columns desired");
+          console.log(rows, columns);
+          for (var i = 0; i < rows; i++) {
+              $("table").append("<tr>row"+i+"</tr>");
+          }
+        for (var v = 1; v < columns; v++) {
+            $("tr").append("<td>column"+v+"</td>");
+        }
+    });
+</script>
+<!--Write a JavaScript function that creates a table, accept row, column numbers from the user, and input row-column number as content (e.g. Row-0 Column-0) of a cell. Go to the editor-->
