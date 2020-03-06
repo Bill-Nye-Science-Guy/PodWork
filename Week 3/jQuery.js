@@ -2,7 +2,10 @@
 
 //#1. Create a paragraph element with some text and append it to the end of the document body using jQuery. (#3 on https://www.w3resource.com/jquery-exercises/1/index.php#EDITOR)
 
-    $("body").append("<p>" + "<span>" + "Words and stuff" + "</span>" + "</p>");
+    $("body").append(
+        "<p>" + "<span>" + "Words and stuff" + "</span>" + "</p>" +
+        "<p>" + "<span>" + "Words and stuff" + "</span>" + "</p>"
+    );
 
 //#2. Using jQuery add the class " w3r_font_color " to the last paragraph element. (#5 on https://www.w3resource.com/jquery-exercises/1/index.php#EDITOR)
 
