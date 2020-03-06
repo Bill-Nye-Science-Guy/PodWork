@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Assessment 3 Review</title>
+    <style>
+        h1 {
+            color: magenta;
+        }
+
+        body {
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+
+<input type="text" id="input">
+<button id="add-btn">Click to add</button>
+<ul id="add-to-me">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    'use strict';
+
+    //Write a function to take the value from the input and append the value onto the ul with the id of add-to-me.
+    //Hard mode: when you click on an li move it from it's current location to the top of the ul
+
+    $('#add-btn').click(function () {
+        var inputValue = $('#input').val();
+        $('#add-to-me').append('<li> ' + inputValue + '</li>');
+    });
+
+
+
+
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset=utf-8/>
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+    <title>Count and display items of a dropdown list - w3resource</title>
+    <script src="js/jquery-2.2.4.js" ></script>
+</head>
+<body>
+<form>
+    Select your favorite Color :
+    <select id="mySelect">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>White</option>
+        <option>Orange</option>
+    </select>
+    <input type="button" value="Count and Output all items">
+</form>
+<script>
+    "use strict";
+
+    $("input").click(function () {
+    var x = document.getElementById("mySelect").childElementCount;
+        console.log(x);
+     $("body").append('<p>'+x+'</p>');
+    })
+
+</script>
+</body>
+</html>

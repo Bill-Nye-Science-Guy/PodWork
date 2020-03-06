@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset=utf-8 />
+    <title>Insert row in a table - w3resource</title>
+    <script src=js/jquery-2.2.4.jss ></script>
+    <style>
+        *{
+            background-color:black;
+            color:skyblue;
+            font-size: 1.2em;
+        }
+        td, tr{
+            border: skyblue solid 1px;
+        }
+
+
+    </style>
+</head><body>
+<table id="sampleTable" >
+    <tr><td>Row1 cell1</td>
+        <td>Row1 cell2</td></tr>
+    <tr><td>Row2 cell1</td>
+        <td>Row2 cell2</td></tr>
+</table><br>
+<input id="button1" type="button" value="Insert row">
+<script>
+    "use strict";
+    $("#button1").click(function () {
+    $("#sampleTable").append("<tr><td>Row3 cell1</td><td>Row3 cell2</td>  </tr>");
+    });
+</script>
+</body></html>
