@@ -1,11 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Problem 1</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+    <meta charset="UTF-8"/>
+    <title>Assessment 3 Review</title>
+    <style>
+        h1 {
+            color: magenta;
+        }
+
+        body {
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
+
+
+<input type="text" id="input">
+<button id="add-btn">Click to add</button>
+<ul id="add-to-me">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     'use strict';
 
@@ -18,55 +37,11 @@
     });
 
 
-    // $("#add-btn").click(function(){
-    //     var myList = $("#input").val();
-    //     $("#input").val("");
-    //
-    //     $("#add-to-me").append("<li>" + myList + "</li>");
-    //     $("#add-to-me").children().last().bind("click", moveLis);
-    // })
-    //
-    // function moveLis(){
-    //     var whatWasClicked = $(this).text();
-    //
-    //     $(this).remove();
-    //     $("#add-to-me").prepend("<li>" + whatWasClicked + "</li>");
-    //
-    //     $("#add-to-me").children().first().bind("click", moveLis);
-    // }
-    //
-    // $("li").click(moveLis)
 
-    //Write a function that changes the font of all text to comic sans 5 seconds after the page loads
-    //Hard mode: Change the background to this image after 10 seconds. https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?cs=srgb&dl=black-and-white-laptop-2740956.jpg&fm=jpg
 
-    $("*").delay(1000).queue(function () {
-        $(this).css("font-family", "Comic Sans MS");
-    });
-
-    // setTimeout(function(){
-    //     $("body").css("background-image", "url(https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?cs=srgb&dl=black-and-white-laptop-2740956.jpg&fm=jpg)")
-    // }, 2000)
-
-    // setTimeout(function(){
-    //     $("body").css("font-family", "Comic Sans MS");
-    // }, 1000)
-
-    //Write a function that bolds the words in the paragraph element with the id of thundercats when the get hype button is pressed
-    //Hard mode: Bold one word every time the button is pressed
-
-    // $("#get-hype").click(function(){
-    //     $("p").css("font-weight", "bold");
-    // })
-
-    var counter = 1;
-
-    $("#get-hype").click(function () {
-        $("#thundercats span:nth-child(" + counter + ")").css("font-weight", "bold");
-
-        counter++;
-    })
 
 </script>
 </body>
 </html>
+
+
