@@ -4,7 +4,7 @@
 // 1. Create a function that returns the index of the first vowel in a string.
 
 function firstVowel(str) {
-        var vowels = ['a','e','i','o','u','A','E','I','O','U']
+        var vowels = ['a','e','i','o','u','A','E','I','O','U'];
         for (var i = 0; i < str.length; i++) {
             var x = str.charAt(i)
             if (vowels.includes(x)) {

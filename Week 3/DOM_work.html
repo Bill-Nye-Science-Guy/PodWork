@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>WEEK 3</title>
+    <style>
+        h1 {
+            color: magenta;
+        }
+
+        .runner {
+            width: 20%;
+            height: 10%;
+            background-color: green;
+        }
+
+        body {
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<h1>I don't like this color</h1>
+
+<div class="runner">
+    <h3>You'll never catch me</h3>
+</div>
+
+<p id="thundercats"><span>Thunder</span> <span>Thunder</span> <span>Thundercats</span> <span>HOOOOOOOO!!!!!!</span></p>
+<button id="get-hype">Get Hype</button>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<!-- <script src="assessment-three-review.js"></script> -->
+
+
+<script>
+    "use strict";
+
+// 1. Write a function that changes the text color of the <h1> when the <h1> is clicked
+
+    function changeh1() {
+        $('h1').click(function () {
+            $(this).css('color', 'red');
+        })
+    }
+    changeh1();
+
+// 2. Write a function that causes the runner div to move to the right side of the screen when the mouse moves over it and to the left when you hover out
+
+    function runnerDiv() {
+        $('.runner').hover(
+            function () {
+            $(this).css('float', 'right');
+        },
+            function () {
+            $(this).css('float', 'left');
+            }
+        )
+    }
+    runnerDiv();
+
+// 3. make thunderbirds change color when you click the get hype input in a span of 3 seconds
+
+
+    $('#get-hype').click(
+        function () {
+            var animate =  $('#thundercats').css({
+                'color': 'firebrick',
+                'background-color': 'papayawhip'
+            });
+            $(animate).css('transition-delay', '3s')
+    })
+</script>
+
+</html>
