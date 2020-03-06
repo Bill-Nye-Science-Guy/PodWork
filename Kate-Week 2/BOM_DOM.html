@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM and DOM Problems</title>
+</head>
+
+<body>
+
+<!--HTML FOR PROBLEM 1-->
+<div id="problem1">
+<p id ='text'>Paragraph text that's supposed to change when you hit the butten</p>
+<div>
+    <button id="jsstyle" onclick="js_style()">Style</button>
+</div>
+</div>
+
+
+<!--HTML FOR PROBLEM 2-->
+<div id="problem2">
+<form id="form1" onsubmit="getFormvalue()">
+    First name: <input type="text" name="fname" value="David"><br>
+    Last name: <input type="text" name="lname" value="Beckham"><br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+
+<!--HTML FOR PROBLEM 3-->
+<div id="problem3">
+<p id="prob3p">Paragraph for problem 3</p>
+</div>
+
+
+
+<style>
+    #problem1, #problem2, #problem3{
+        height: 150px;
+    }
+    #prob3p{
+        height: 50%;
+        width: 50vw;
+    }
+</style>
+<script src="BOM_DOM.js"></script>
+</body>
+</html>
