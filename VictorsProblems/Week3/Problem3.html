@@ -5,17 +5,28 @@
     <title>Problem3</title>
 </head>
 <body>
-<!--Find the index of a string within a hex encoded string.-->
+Find the index of a string within a hex encoded string.
 
-<!--You will be given a string which needs to be found in another string which has previously been translated into hex. You will need to return the first index of the needle within the hex encoded string.-->
+You will be given a string which needs to be found in another string which has previously been translated into hex. You will need to return the first index of the needle within the hex encoded string.
 
-<!--Examples-->
-<!--firstIndex("68 65 6c 6c 6f 20 77 6f 72 6c 64", "world") ➞ 6-->
+Examples
+firstIndex("68 65 6c 6c 6f 20 77 6f 72 6c 64", "world") ➞ 6
 
-<!--firstIndex("47 6f 6f 64 62 79 65 20 77 6f 72 6c 64", "world") ➞ 8-->
+firstIndex("47 6f 6f 64 62 79 65 20 77 6f 72 6c 64", "world") ➞ 8
 
-<!--firstIndex("42 6f 72 65 64 20 77 6f 72 6c 64", "Bored") ➞ 0-->
-<!--Notes-->
-<!--N/A-->
+firstIndex("42 6f 72 65 64 20 77 6f 72 6c 64", "Bored") ➞ 0
+Notes
+
+Testing keyboard to see if I like it with a cover on it and it seems like the answeris is still yes
+
+N/A
+
+Test.assertEquals(firstIndex("68 65 6c 6c 6f 20 77 6f 72 6c 64", "world"), 6)
+Test.assertEquals(firstIndex("47 6f 6f 64 62 79 65 20 77 6f 72 6c 64", "world"), 8)
+Test.assertEquals(firstIndex("74 68 65 20 6e 65 65 64 6c 65 20 69 73 20 74 6f 20 62 65 20 66 6f 75 6e 64", "needle"), 4)
+Test.assertEquals(firstIndex("a3 24 25 2d 2d 2d a3 24 20 77 6f 72 6c 64 2d 2d 2d", "world"), 9)
+Test.assertEquals(firstIndex("42 6f 72 65 64 20 77 6f 72 6c 64", "Bored"), 0)
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </body>
 </html>
